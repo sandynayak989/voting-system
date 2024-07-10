@@ -132,7 +132,7 @@ void adminPanel() {
             enterCandidates();
             break;
 
-        case 3://try changing to append for fixing rewrite bug
+        case 3:
             for (int i = 0; i < numStudents; i++) {
               students[i].hasVoted = false;
             }
@@ -224,7 +224,7 @@ void updateCandidateFile() {
 }
 
 void enterCredentials() {
-    // Enter credentials logic remains unchanged
+    // Enter credentials logic
     char ch;
     FILE *studentsFile = fopen("students.txt", "a");
     do{
@@ -245,7 +245,7 @@ void enterCredentials() {
 }
 
 void enterCandidates() {
-    // Edit candidates logic remains unchanged
+    // Edit candidates logic
     char ch;
     FILE *candidatesFile = fopen("candidates.txt", "w");
     do{
